@@ -48,7 +48,7 @@ public class StartFrame extends JFrame {
 		contentPane.add(scrollPane);
 		
 		table = new JTable(); //3. Se crea la tabla.
-		scrollPane.setViewportView(table); //4. Se a�ade la tabla al ScrollPane.
+		scrollPane.setViewportView(table); //4. Se añade la tabla al ScrollPane.
 		
 		DefaultTableModel mo = new DefaultTableModel(); //5. Se crea el modelo de la tabla.
 		
@@ -57,16 +57,16 @@ public class StartFrame extends JFrame {
 		
 		Object []fila = new Object[2];
 		
-		for (int i = 0; i < 50; i++) { //6. Se a�aden elementos a la tabla.
+		for (int i = 0; i < 50; i++) { //6. Se añaden elementos a la tabla.
 			for (int j = 0; j < fila.length; j++) {
 				if (j == 0) {
-					fila[j] = "Daniel Alvarez " + (i+1);
+					fila[j] = "Daniel Alvarez " + (i + 1);
 				}
 				else {
-					fila[j] = "MelchioT " + (i+1);
+					fila[j] = "MelchioT " + (i + 1);
 				}	
 			}
-			mo.addRow(fila); //7. Se le a�ade la fila a la tabla.
+			mo.addRow(fila); //7. Se le añade la fila a la tabla.
 		}
 		table.setModel(mo); //8. Se le carga el modelo a la tabla.
 	}
