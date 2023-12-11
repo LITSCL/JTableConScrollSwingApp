@@ -11,7 +11,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 public class StartFrame extends JFrame {
-
 	private JPanel contentPane;
 	private JTable table;
 
